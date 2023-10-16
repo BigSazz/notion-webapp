@@ -43,8 +43,10 @@ export default function RootLayout({
 						disableTransitionOnChange
 						storageKey="note-wave-theme"
 					>
-						<Toaster position="bottom-center" />
-						{children}
+						<Toaster position="bottom-right" richColors />
+						<div className="h-full dark:bg-[#1f1f1f]">
+							{children}
+						</div>
 					</ThemeProvider>
 				</ConvexClientProvider>
 			</body>
